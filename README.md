@@ -23,6 +23,35 @@ to V11. Do not combine V10, V11, and V13. V12 is the sole intentional stack,
 and its Supervised and Autonomous editions are alternatives, not a combined
 prompt.
 
+## Quick start for everyone — no installation or code
+
+Loka is not an app or a service. For ordinary chat use, a person does **not**
+need to install anything. Paste the block below into an Agent, replace the task
+placeholder, and let the Agent read the public files.
+
+```text
+Use Loka Context Harness for this task:
+
+[PASTE MY TASK HERE]
+
+Read these files in order:
+1. https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/LOKA_ROOT.md
+2. https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/agent-skills/loka-router/SKILL.md
+3. The one matching Skill under https://github.com/Wazifati/loka-context-harness/tree/main/agent-skills
+
+If the selected Skill points to a reference source, retrieve that matching file
+from the same repository. Do not merge V10, V11, and V13. Tell me which Loka
+route you selected in one sentence, then do the task.
+```
+
+If the Agent cannot open GitHub links, open [`LOKA_ROOT.md`](LOKA_ROOT.md) and
+[`loka-router/SKILL.md`](agent-skills/loka-router/SKILL.md) in a browser, copy
+both into the chat, then attach or paste the one selected Skill. Attach the
+matching source PDF when the selected Skill requests it. You never need to
+paste the whole repository.
+
+For a more guided version, see [`QUICKSTART.md`](QUICKSTART.md).
+
 ## Use it as an Agent Skill, Agent Plugin, or Meta Prompt
 
 - **Agent Skills:** copy or install [`agent-skills/`](agent-skills/) into an

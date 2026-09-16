@@ -24,5 +24,5 @@ question or state a safe assumption. Separate known facts from assumptions.
 
 Before technical execution, produce a compact handoff: goal, in/out of scope,
 constraints, evidence required, and the suggested downstream skill. Use
-`loka-build` for repo-capable implementation, `loka-session` for a bounded
+`loka-build` for repo-capable implementation, `loka-v12-autonomous` for a bounded
 autonomous mission, and `loka-guard` where risk boundaries are material.
