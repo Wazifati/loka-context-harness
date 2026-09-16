@@ -81,7 +81,7 @@ do not have separate Lite forms. Direct-use Lite prompts are in
   is a self-contained portable bundle.
 - **Meta Prompts:** [`meta-prompts/`](meta-prompts/) provides direct-use
   context for DIY harnesses. `agent-skills/` and `meta-prompts/` are the
-canonical sources; the portable Plugin mirrors them and can be verified before release to
+canonical sources; the portable Plugin mirrors them and is checked in CI to
 prevent version drift.
 
 The package is Agent-neutral and can be adapted to OpenClaw, Hermes, Claude,

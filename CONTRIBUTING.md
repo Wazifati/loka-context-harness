@@ -27,4 +27,4 @@ opening a pull request, run:
 python tools/sync_portable_plugin.py --check
 ```
 
-Run the command without `--check` to refresh the mirror. The check rejects drift.
+Run the command without `--check` to refresh the mirror. CI rejects drift.

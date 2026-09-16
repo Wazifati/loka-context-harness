@@ -4,7 +4,7 @@
 
 - Repairs two portable-plugin links to preserved V12 source material.
 - Synchronizes the portable Router with its canonical Agent Skill.
-- Adds a repeatable check preventing drift between canonical Skills/Meta Prompts and the portable Plugin.
+- Adds a CI check preventing drift between canonical Skills/Meta Prompts and the portable Plugin.
 - Removes a stale Anthropic-key instruction and clarifies that the synthetic dry run is not effectiveness evidence.
 
 ## 0.1.1 — Complete original Lite family
