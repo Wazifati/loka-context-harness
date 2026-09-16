@@ -3,8 +3,8 @@
 This repository is a synthesis of the maintainer's operational experience and
 publicly available ideas. It must not imply that every underlying idea is new.
 
-The original Loka ACE, V10, V11, V12, V13, Failures, Build, and Guard source
-materials supplied by the project maintainer are preserved or adapted here as
+The original Loka ACE, V10, V11, V12, V13, their supplied Lite editions, Failures,
+Build, and Guard source materials supplied by the project maintainer are preserved or adapted here as
 Loka material. The SKILL.md packages are Agent-neutral distribution adapters;
 they do not claim third-party authorship.
 

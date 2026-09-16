@@ -58,3 +58,11 @@ bundle is for hosts that use plugin-style instruction packages.
 
 For V11 work, Guard handles instruction trust and Build helps the Agent choose
 the smallest suitable implementation. They support V11; they do not replace it.
+
+## Want the shortest copy-paste form?
+
+Choose the matching **Lite** edition from [`meta-prompts/`](meta-prompts/). Lite
+means the compact original or companion for the same environment, not a different
+route. Do not load a Full prompt and its Lite form together. Use
+[`LOKA_INDEX.md`](LOKA_INDEX.md) if you are deciding between supervised V12 Lite
+and the separate Autonomous Edition Lite.

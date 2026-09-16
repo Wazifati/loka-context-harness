@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1 — Complete original Lite family
+
+- Adds ACE Lite, V10 Lite, V12 Lite, and V13 Lite as original compact alternatives.
+- Synchronizes V11 Lite with the supplied v11.3 source, including dependency verification and Surgical Fix Mode.
+- Adds human-facing Lite selection guidance without changing original environment routing.
+- Adds LokaV12 Autonomous Edition Lite as a distinct compact companion to the new autonomous edition.
+- Adds `LOKA_INDEX.md` as the canonical Full, Lite, and overlay map.
+
+
 ## 0.1.0 — Initial public release
 
 - Preserves the original Loka ACE, V10, V11, V12, V13, and Failures routes.

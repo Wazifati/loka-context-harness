@@ -3,27 +3,10 @@
 Loka is a family of context-engineered operating frameworks for improving the
 quality, safety, structure, and honesty of AI Agent work. Each version is for a
 specific environment. This repository preserves that structure and distributes
-it as Agent Skills, an Agent Plugin bundle, and Meta Prompts.
+it as Agent Skills, an Agent Plugin bundle, and Meta Prompts. See the
+[complete Loka Index](LOKA_INDEX.md) for Full, Lite, and overlay mapping.
 
-## Choose the correct Loka version
-
-| Situation | Use |
-|---|---|
-| Vague intent, research, strategy, content, workflow, or assistant design | **Loka ACE** |
-| Prompt architecture, secure app/SaaS planning, or technical audit without repo/shell execution | **LokaV10** |
-| Repo/CLI/IDE Agent that can inspect files, edit code, run commands, or use tools | **LokaV11** |
-| Instruction trust, scope, architecture, dependency, or security gate | **Loka Guard** |
-| New implementation under V11: decide if code is needed and where it belongs | **Loka Build** on V11 |
-| Supervised 1–3 hour V11 coding session with periodic human review | **LokaV12 Supervised** on V11 |
-| Bounded autonomous V11 mission with a delegated authority contract | **LokaV12 Autonomous Edition** on V11 |
-| Vibe coding, visual prompt builders, or agentic visual IDEs | **LokaV13** |
-
-After a V13 project is exported to a normal repository/IDE, stop V13 and move
-to V11. Do not combine V10, V11, and V13. V12 is the sole intentional stack,
-and its Supervised and Autonomous editions are alternatives, not a combined
-prompt.
-
-## Quick start for everyone — no installation or code
+## Start here — no code required
 
 Loka is not an app or a service. For ordinary chat use, a person does **not**
 need to install anything. Paste the block below into an Agent, replace the task
@@ -52,13 +35,44 @@ paste the whole repository.
 
 For a more guided version, see [`QUICKSTART.md`](QUICKSTART.md).
 
+## Choose the correct Loka version
+
+| Situation | Use |
+|---|---|
+| Vague intent, research, strategy, content, workflow, or assistant design | **Loka ACE** / **ACE Lite** for compact copy-paste use |
+| Prompt architecture, secure app/SaaS planning, or technical audit without repo/shell execution | **LokaV10** / **V10 Lite** |
+| Repo/CLI/IDE Agent that can inspect files, edit code, run commands, or use tools | **LokaV11** / **V11 Lite** |
+| Instruction trust, scope, architecture, dependency, or security gate | **Loka Guard** |
+| New implementation under V11: decide if code is needed and where it belongs | **Loka Build** on V11 |
+| Supervised 1–3 hour V11 coding session with periodic human review | **LokaV12 Supervised** / **V12 Lite** on V11 |
+| Bounded autonomous V11 mission with a delegated authority contract | **LokaV12 Autonomous Edition** / **Autonomous Edition Lite** on V11 |
+| Vibe coding, visual prompt builders, or agentic visual IDEs | **LokaV13** / **V13 Lite** |
+
+After a V13 project is exported to a normal repository/IDE, stop V13 and move
+to V11. Do not combine V10, V11, and V13. V12 is the sole intentional stack,
+and its Supervised and Autonomous editions are alternatives, not a combined
+prompt.
+
+## Full and Lite editions
+
+Every primary Loka route has a Lite alternative: **ACE Lite, V10 Lite, V11
+Lite, V12 Lite (Supervised), V12 Autonomous Edition Lite, and V13 Lite**.
+Lite is the original compact, copy-paste edition for the **same environment** as
+its Full counterpart. Select one: Full for the complete framework, Lite for a
+short session or limited context. Never load Full and Lite together. V12 Lite is
+the original **supervised** V12 overlay. **V12 Autonomous Edition Lite** is a
+separate compact companion to the new autonomous edition. Guard, Build, and
+Failures are supporting modules, not alternate environment frameworks, so they
+do not have separate Lite forms. Direct-use Lite prompts are in
+[`meta-prompts/`](meta-prompts/).
+
 ## Use it as an Agent Skill, Agent Plugin, or Meta Prompt
 
 - **Agent Skills:** copy or install [`agent-skills/`](agent-skills/) into an
   Agent host that supports the SKILL.md convention. Start with
   [`LOKA_ROOT.md`](LOKA_ROOT.md) or the router, then load only the matching
-  module. The folder includes ACE, V10, V11, V12 Supervised, V12 Autonomous,
-  V13, Guard, Build, and Failures.
+  module. The folder includes Full and Lite ACE, V10, V11, V12 Supervised,
+  V12 Autonomous, and V13 forms, plus Guard, Build, and Failures.
 - **Agent Plugin:** [`agent-plugins/loka-context-harness/`](agent-plugins/loka-context-harness/)
   is a self-contained portable bundle.
 - **Meta Prompts:** [`meta-prompts/`](meta-prompts/) provides direct-use
@@ -91,8 +105,8 @@ remains the preserved original.
 
 ## Sources and provenance
 
-The supplied original ACE, Failures, Index, usage guide, and V10–V13 references
-are preserved under [`reference-source/`](reference-source/). New Agent Skills
+The supplied original Full and Lite ACE, Failures, Index, usage guide, and V10–V13
+references are preserved under [`reference-source/`](reference-source/). New Agent Skills
 and V12 Autonomous Edition are clearly identified as distribution adapters or
 new material; they do not overwrite the originals.
 

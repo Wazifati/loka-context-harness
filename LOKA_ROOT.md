@@ -14,8 +14,12 @@ For repository work, load **Loka Guard** first. Use **Loka Build** after the
 task is understood and before implementation. Use **Loka Failures** only as a
 relevant risk lens, not as a competing workflow.
 
+Each major route has a Lite form for a compact, copy-paste session, including
+the new V12 Autonomous Edition Lite. Lite is an alternative to its matching Full
+form, not a second framework to combine.
+
 Do not mix V10, V11, and V13. V12 is the sole designed overlay and its two
 editions are alternatives. Host platform policies and the user's current
 instructions always take precedence over Loka.
 
-See `agent-skills/loka-router/SKILL.md` for the complete router.
+See `LOKA_INDEX.md` for the complete Full, Lite, and overlay mapping.
