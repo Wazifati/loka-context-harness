@@ -1,7 +1,7 @@
 # LokaV12 Autonomous Edition
 
 **Status:** second edition draft. It supplements, never replaces,
-[LokaV12 Supervised](../reference-source/8-LokaV12.pdf). Load it on top of
+[LokaV12 Supervised](https://github.com/Wazifati/loka-context-harness/blob/main/reference-source/8-LokaV12.pdf). Load it on top of
 LokaV11 for a bounded autonomous mission only.
 
 ```text

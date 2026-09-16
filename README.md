@@ -8,6 +8,10 @@ it as Agent Skills, an Agent Plugin bundle, and Meta Prompts. See the
 
 ## Start here — no code required
 
+Use Loka selectively. A quick factual question or casual chat does not need it;
+choose a matching Lite edition when you want more structure without a long
+prompt, and use a Full edition only when the task genuinely needs its process.
+
 Loka is not an app or a service. For ordinary chat use, a person does **not**
 need to install anything. Paste the block below into an Agent, replace the task
 placeholder, and let the Agent read the public files.
@@ -76,7 +80,9 @@ do not have separate Lite forms. Direct-use Lite prompts are in
 - **Agent Plugin:** [`agent-plugins/loka-context-harness/`](agent-plugins/loka-context-harness/)
   is a self-contained portable bundle.
 - **Meta Prompts:** [`meta-prompts/`](meta-prompts/) provides direct-use
-  context for DIY harnesses.
+  context for DIY harnesses. `agent-skills/` and `meta-prompts/` are the
+canonical sources; the portable Plugin mirrors them and can be verified before release to
+prevent version drift.
 
 The package is Agent-neutral and can be adapted to OpenClaw, Hermes, Claude,
 GPT, local models, or another Agent platform. No evaluation, VPS, API,

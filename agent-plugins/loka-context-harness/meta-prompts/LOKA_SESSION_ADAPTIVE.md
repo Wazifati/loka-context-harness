@@ -34,4 +34,4 @@ risk; recovery point; and next safe action.
 ```
 
 For the historical V12 source and templates, see
-[`reference-source/8-LokaV12.pdf`](../reference-source/8-LokaV12.pdf).
+[`reference-source/8-LokaV12.pdf`](https://github.com/Wazifati/loka-context-harness/blob/main/reference-source/8-LokaV12.pdf).

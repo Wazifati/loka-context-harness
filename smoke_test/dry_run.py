@@ -11,8 +11,8 @@ Use this to verify:
 - The disagreement-flagging logic works
 - The improvement-delta calculation is correct
 
-Run real eval with: python runner/run_eval.py --models claude --smoke-test
-(once you have ANTHROPIC_API_KEY set)
+For optional legacy research only, see RUN_THIS_ON_VPS.md. Any real run
+requires explicit approval, ABACUS_API_KEY, current RouteLLM model IDs, and a hard spend cap.
 """
 
 import json

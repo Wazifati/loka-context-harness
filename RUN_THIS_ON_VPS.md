@@ -4,9 +4,11 @@ Loka Context Harness is a context-engineered prompt and workflow kit. It is
 usable without this directory, without a VPS, and without any API call.
 
 The legacy evaluation materials in this repository are an exploratory research
-starting point only. They must not be used as a launch gate, as proof that one
-LLM is better than another, or as the source of a marketing claim without a
-separately reviewed methodology.
+scaffold, not a turnkey benchmark. The synthetic dry run verifies report
+generation only; it does not show that Loka improves an Agent or model. These
+materials must not be used as a launch gate, proof that one LLM is better than
+another, or the source of a marketing claim without a separately reviewed
+methodology.
 
 ## Default: do not run anything
 

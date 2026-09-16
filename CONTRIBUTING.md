@@ -16,3 +16,15 @@ into a single default prompt.
   evaluated prompt set after publishing results; publish a new version instead.
 
 Use Issues for reproducible bugs and Discussions for questions or proposals.
+
+## Portable plugin synchronization
+
+`agent-skills/` and `meta-prompts/` are the canonical editable sources. The
+portable plugin intentionally mirrors them so it can be installed alone. Before
+opening a pull request, run:
+
+```bash
+python tools/sync_portable_plugin.py --check
+```
+
+Run the command without `--check` to refresh the mirror. The check rejects drift.
