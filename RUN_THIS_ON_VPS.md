@@ -26,5 +26,7 @@ account, key, subscription credit, or server access is needed.
 4. Treat findings as exploratory. Preserve prompts, exact configuration, raw
    results, failed calls, and human adjudications before sharing any result.
 
-Do not run the current legacy runner as a public proof. It needs a separate
-methodology hardening pass before it could support external quantitative claims.
+Do not run the current legacy runner as a public proof. It is not turnkey:
+`eval_config.example.json` is a reference record only and is not loaded by the
+runner. It needs a separately reviewed methodology and implementation pass
+before it could support external quantitative claims.

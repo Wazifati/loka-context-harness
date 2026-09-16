@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.3 — Evidence and reporting hardening
+
+- Removes performance-implying language from synthetic dry-run outputs and the legacy runner.
+- Labels the evaluation configuration as a non-executable research record template.
+- Enables GitHub private vulnerability reporting and links the private route from `SECURITY.md`.
+- Aligns the MIT copyright notice with Loka Context Harness.
+
 ## 0.1.2 — Packaging integrity and evaluation clarity
 
 - Repairs two portable-plugin links to preserved V12 source material.

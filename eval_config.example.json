@@ -1,4 +1,6 @@
 {
+  "status": "Reference research record only. The current legacy runner does not load this file.",
+  "usage": "Do not treat this as turnkey evaluation configuration or performance evidence.",
   "version": "2.0",
   "endpoint": "https://routellm.abacus.ai/v1",
   "subjects": {

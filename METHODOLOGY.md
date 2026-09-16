@@ -26,3 +26,10 @@ exact IDs, verify billing attribution, and obtain explicit account-holder
 approval before making calls. Until those conditions are met, do not present
 results as proof of performance, a ranking of models, or a universal
 reliability claim.
+
+## Legacy configuration caveat
+
+`eval_config.example.json` is a **reference record template**, not a runnable
+configuration file: the current legacy runner does not load it. It exists only
+to show the configuration fields a future, separately reviewed study should
+record. Do not present the current runner as turnkey evaluation tooling.

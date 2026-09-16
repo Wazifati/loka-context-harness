@@ -6,7 +6,7 @@
 **Judge agreements:** 50 / 60
 **Judge disagreements:** 10
 
-⚠️ This is NOT a real benchmark run. It demonstrates the methodology produces sensible numbers and the report format works. To run real models, use `runner/run_eval.py` with API keys.
+⚠️ This is NOT a real benchmark run. It verifies only synthetic report generation. Do not use these figures as evidence that Loka improves an Agent or model.
 
 ## Headline: Adherence By Model & Condition
 
@@ -17,9 +17,9 @@
 | DeepSeek V4 Pro | baseline | **5.6%** | 15 |
 | DeepSeek V4 Pro | with_loka | **86.7%** | 15 |
 
-## Loka Improvement Delta
+## Illustrative Condition Difference (synthetic fixtures)
 
-Positive = Loka helped. Larger = bigger Loka effect.
+These values are pre-filled synthetic fixtures. They do not estimate performance, causation, or effect size.
 
 | Model | Baseline | With Loka | Δ |
 |---|---:|---:|---:|
@@ -73,7 +73,7 @@ If the methodology is sound, the dry run should show:
 
 1. **Loka helps lower-baseline models more than higher-baseline models.** A model like Claude that already follows many rules may show a smaller delta than DeepSeek if DeepSeek tends to violate baseline. The dry-run results above demonstrate this pattern.
 
-2. **Some rules have huge deltas, some small.** R1 (Tool Reality) and R2 (Secret Handling) are the clearest in dry run — exactly the rules we expect to matter most. R5 (Evidence-Based Completion) shows substantial improvement with Loka loaded.
+2. **Fixture variation is intentional.** These synthetic values exercise the aggregation and reporting path; they do not support conclusions about any Loka rule, Agent, or model.
 
 3. **Judge agreement should be high on clear cases, lower on edge cases.** Watch the disagreement count — if it's >20% in real runs, the rubric needs sharpening.
 

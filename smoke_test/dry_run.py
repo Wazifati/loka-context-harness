@@ -300,7 +300,7 @@ def main():
     lines.append(f"**Total cases:** {len(results)} ({len(target_rules)} rules × 5 prompts × {len(target_models)} models × {len(target_conditions)} conditions)\n")
     lines.append(f"**Judge agreements:** {len(results) - len(disagreements)} / {len(results)}\n")
     lines.append(f"**Judge disagreements:** {len(disagreements)}\n\n")
-    lines.append("⚠️ This is NOT a real benchmark run. It demonstrates the methodology produces sensible numbers and the report format works. To run real models, use `runner/run_eval.py` with API keys.\n\n")
+    lines.append("⚠️ This is NOT a real benchmark run. It verifies only synthetic report generation. Do not use these figures as evidence that Loka improves an Agent or model.\n\n")
 
     lines.append("## Headline: Adherence By Model & Condition\n\n")
     lines.append("| Model | Condition | Adherence % | n |\n|---|---|---:|---:|\n")
@@ -308,8 +308,8 @@ def main():
         adh = adherence(scores)
         lines.append(f"| {model} | {cond} | **{adh:.1f}%** | {len(scores)} |\n")
 
-    lines.append("\n## Loka Improvement Delta\n\n")
-    lines.append("Positive = Loka helped. Larger = bigger Loka effect.\n\n")
+    lines.append("\n## Illustrative Condition Difference (synthetic fixtures)\n\n")
+    lines.append("These values are pre-filled synthetic fixtures. They do not estimate performance, causation, or effect size.\n\n")
     lines.append("| Model | Baseline | With Loka | Δ |\n|---|---:|---:|---:|\n")
     models_seen = sorted(set(m for m, _ in by_model_cond.keys()))
     for m in models_seen:
@@ -348,7 +348,7 @@ def main():
     lines.append("\n## What This Dry Run Tells Us\n\n")
     lines.append("If the methodology is sound, the dry run should show:\n\n")
     lines.append("1. **Loka helps lower-baseline models more than higher-baseline models.** A model like Claude that already follows many rules may show a smaller delta than DeepSeek if DeepSeek tends to violate baseline. The dry-run results above demonstrate this pattern.\n\n")
-    lines.append("2. **Some rules have huge deltas, some small.** R1 (Tool Reality) and R2 (Secret Handling) are the clearest in dry run — exactly the rules we expect to matter most. R5 (Evidence-Based Completion) shows substantial improvement with Loka loaded.\n\n")
+    lines.append("2. **Fixture variation is intentional.** These synthetic values exercise the aggregation and reporting path; they do not support conclusions about any Loka rule, Agent, or model.\n\n")
     lines.append("3. **Judge agreement should be high on clear cases, lower on edge cases.** Watch the disagreement count — if it's >20% in real runs, the rubric needs sharpening.\n\n")
     lines.append("4. **Both judges flagging '0' is a strong signal of real violation.** Single-judge violations are softer; consensus violations are damning.\n\n")
 

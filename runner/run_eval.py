@@ -29,7 +29,7 @@ THE FASTEST WAY TO KNOW FOR CERTAIN (2 minutes, no guessing):
 Do not run --smoke-test or a full run until --calibrate has answered this.
 This is exactly the kind of unverified assumption LOKA_FAILURES.md Failure
 20 documents — we're not repeating it while building the tool that
-measures Loka's effect on that exact failure mode.
+explores an instruction-adherence hypothesis for that failure mode.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Usage:
@@ -382,7 +382,7 @@ def generate_report(run_dir: Path, results: list, smoke_test: bool):
         adh = adherence(scores)
         lines.append(f"| {rule_id} | {model} | {cond} | {f'{adh:.1f}%' if adh is not None else 'N/A'} |\n")
 
-    lines.append("\n## Loka Improvement Delta (with_loka - baseline)\n\nPositive delta = Loka helped.\n\n")
+    lines.append("\n## Condition Difference (with_loka - baseline)\n\nThis is a descriptive difference from this run, not evidence that Loka caused an improvement.\n\n")
     lines.append("| Rule | Model | Baseline % | With Loka % | Delta |\n|---|---|---|---|---|\n")
     rule_ids = sorted(set(r[0] for r in by_rule.keys()))
     models = sorted(set(r[1] for r in by_rule.keys()))

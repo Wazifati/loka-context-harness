@@ -1,10 +1,15 @@
 # Security policy
 
-Please do not publish suspected vulnerabilities in public issues.
+## Private reporting
 
-Report them privately to the maintainer through the GitHub repository's private
-contact channel when one is enabled. Include the affected file, a minimal
-reproduction, impact, and any proposed mitigation. The project will acknowledge
-the report, assess it, and coordinate disclosure before publishing a fix.
+Do **not** open a public issue for a suspected vulnerability. Private
+vulnerability reporting is enabled for this repository. Open the repository’s
+[Security page](https://github.com/Wazifati/loka-context-harness/security),
+choose **Report a vulnerability**, and submit the report through GitHub’s
+private form.
+
+Include the affected file or module, a minimal reproduction, impact, and any
+proposed mitigation. Do not include live credentials, personal data, or other
+unnecessary sensitive material.
 
 Treat all third-party skills and external content as untrusted until reviewed.

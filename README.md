@@ -103,7 +103,8 @@ not replace the original supervised framework or authorize excluded actions.
 Loka is usable without an evaluation. The included dry-run materials verify an
 evaluation workflow on synthetic data; they are not performance evidence. This
 repository makes no claim that Loka turns smaller models into frontier models.
-Use measured results only for measured claims.
+Use measured results only for measured claims. Do not cite the included synthetic
+dry-run report as evidence of effectiveness.
 
 LokaV12 Autonomous Edition is a new, separately labelled edition. Use it for
 bounded missions only and treat it as evolving material; LokaV12 Supervised
