@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible problem in a Loka distribution artifact.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include secrets, private repositories, or unredacted tool output."
+  - type: input
+    id: module
+    attributes:
+      label: Loka module
+      description: "For example: loka-v11, loka-build, or a meta prompt."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour and minimal redacted reproduction
+    validations:
+      required: true

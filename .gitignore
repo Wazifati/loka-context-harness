@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+
+# Real-run artefacts may contain model outputs and should be selected deliberately.
+results/RUN_*/
+!results/DRYRUN_*/
+# Host-specific compatibility adapters remain local; publish the Agent-neutral bundle.
+.agents/
+plugins/
+.DS_Store
+*.log
+# Keep the concise dry-run report; do not publish synthetic raw outputs by default.
+results/*/raw_outputs/
+results/*/scores.json

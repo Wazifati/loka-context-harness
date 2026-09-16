@@ -1,0 +1,29 @@
+{
+  "version": "2.0",
+  "endpoint": "https://routellm.abacus.ai/v1",
+  "subjects": {
+    "example_model": {
+      "model": "REPLACE_WITH_EXACT_ROUTELLM_MODEL_ID",
+      "display": "Replace with exact model name",
+      "type": "unknown"
+    }
+  },
+  "judges": {
+    "judge_a": {
+      "model": "REPLACE_WITH_EXACT_ROUTELLM_MODEL_ID",
+      "display": "Judge A exact model name"
+    },
+    "judge_b": {
+      "model": "REPLACE_WITH_A_DIFFERENT_MODEL_FAMILY_ID",
+      "display": "Judge B exact model name"
+    }
+  },
+  "request": {
+    "temperature": 0,
+    "subject_max_tokens": 800,
+    "judge_max_tokens": 250,
+    "timeout_seconds": 120,
+    "retry_attempts": 3,
+    "min_interval_seconds": 0.5
+  }
+}
