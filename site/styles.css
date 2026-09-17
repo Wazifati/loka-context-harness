@@ -67,6 +67,29 @@ h1 em, h2 em { color: #ffcf49; font-weight: 600; }
 .demo-player::before { position: absolute; z-index: 1; top: 12px; left: 15px; content: "MATCHED CONTEXT DEMO / 00:45"; color: var(--cream); font-family: var(--mono); font-size: .61rem; letter-spacing: .08em; pointer-events: none; text-shadow: 0 1px 4px rgba(0,0,0,.8); }
 .demo-player video { display: block; width: 100%; aspect-ratio: 16 / 9; background: var(--ink); }
 
+.comparison { padding: clamp(94px, 12vw, 164px) 0; }
+.comparison-heading { max-width: 690px; }
+.comparison-heading h2 { color: var(--ink); font-size: clamp(3rem, 5.7vw, 6.1rem); }
+.comparison-heading h2 em { color: var(--orange); }
+.comparison-heading > p:not(.eyebrow) { max-width: 560px; margin: 29px 0 0; font-size: 1.03rem; line-height: 1.68; }
+.comparison-prompt { display: grid; grid-template-columns: 170px 1fr; gap: 24px; align-items: start; margin: 52px 0 28px; padding: 22px 24px; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line); }
+.comparison-prompt span, .test-window header span { color: var(--orange-dark); font-family: var(--mono); font-size: .67rem; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; }
+.comparison-prompt p { max-width: 780px; margin: 0; font-family: var(--serif); font-size: clamp(1.25rem, 2.2vw, 1.82rem); font-weight: 600; letter-spacing: -.025em; line-height: 1.2; }
+.comparison-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.test-window { min-width: 0; border: 1px solid rgba(32,27,26,.26); background: #eee6dc; box-shadow: 10px 10px 0 rgba(32,27,26,.11); }
+.test-window--ace { border-color: var(--orange); background: var(--ink); box-shadow: 10px 10px 0 var(--orange); color: var(--cream); }
+.test-window header { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: baseline; min-height: 58px; padding: 16px 18px; border-bottom: 1px solid rgba(32,27,26,.2); }
+.test-window--ace header { border-bottom-color: rgba(244,238,231,.24); }
+.test-window header strong { font-family: var(--serif); font-size: 1.23rem; letter-spacing: -.025em; }
+.test-window header small { color: rgba(32,27,26,.62); font-family: var(--mono); font-size: .62rem; white-space: nowrap; }
+.test-window--ace header small { color: rgba(244,238,231,.7); }
+.test-window pre { max-height: 410px; overflow: auto; margin: 0; padding: 20px 18px 24px; color: inherit; background: transparent; font-family: var(--mono); font-size: .74rem; line-height: 1.68; white-space: pre-wrap; }
+.comparison-takeaway { margin-top: 48px; padding: 30px 0 0; border-top: 1px solid var(--line); }
+.comparison-takeaway > .eyebrow { margin-bottom: 16px; }
+.comparison-takeaway ul { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.comparison-takeaway li { padding: 8px 11px; color: var(--cream); background: var(--ink); border-radius: 99px; font-family: var(--mono); font-size: .69rem; }
+.comparison-method { max-width: 680px; margin: 22px 0; color: rgba(32,27,26,.68); font-size: .84rem; line-height: 1.55; }
+
 .scene--research { min-height: 900px; display: grid; align-items: center; padding: 90px 0; background: #5e1707; }
 .research-art { background-image: url("https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/assets/loka-deep-research.png"); background-position: 60% center; }
 .scene-wash { position: absolute; z-index: -2; inset: 0; background: linear-gradient(90deg, rgba(76, 14, 3, .96) 0%, rgba(83, 19, 6, .83) 42%, rgba(83, 19, 6, .15) 78%); }
@@ -117,7 +140,7 @@ pre { overflow-x: auto; margin: 0; padding: 17px 16px; color: var(--cream); font
   h2 { font-size: clamp(3rem, 14vw, 4.8rem); }
   .hero-intro { margin-top: 27px; font-size: 1rem; }
   .scene-caption { display: none; }
-  .statement-grid, .evaluation-grid, .demo { grid-template-columns: 1fr; gap: 32px; }
+  .statement-grid, .evaluation-grid, .demo, .comparison-grid { grid-template-columns: 1fr; gap: 32px; }
   .statement { padding: 95px 0; }
   .scene--research, .scene--contribute { min-height: 820px; }
   .research-art { background-position: 66% center; }
@@ -127,6 +150,11 @@ pre { overflow-x: auto; margin: 0; padding: 17px 16px; color: var(--cream); font
   .scene-content { align-self: end; padding-bottom: 30px; }
   .scene-content > p:not(.eyebrow) { font-size: .96rem; }
   .demo { padding: 82px 0 100px; }
+  .comparison { padding: 82px 0 100px; }
+  .comparison-prompt { grid-template-columns: 1fr; gap: 10px; margin-top: 36px; padding: 18px 0; }
+  .test-window header { grid-template-columns: 1fr auto; }
+  .test-window header strong { grid-column: 1 / -1; grid-row: 2; }
+  .test-window pre { max-height: 360px; font-size: .7rem; }
   .demo-player { box-shadow: 12px 12px 0 var(--orange); }
   .demo-copy > p:not(.eyebrow) { font-size: .96rem; }
   .prompt-card { margin-top: 27px; }
