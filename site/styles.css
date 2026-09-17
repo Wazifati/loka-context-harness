@@ -1,0 +1,132 @@
+:root {
+  --orange: #e85416;
+  --orange-dark: #b8390b;
+  --cream: #f4eee7;
+  --ink: #201b1a;
+  --red: #a62029;
+  --line: rgba(32, 27, 26, .2);
+  --mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sans: "DM Sans", Inter, Arial, sans-serif;
+  --serif: "Playfair Display", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--cream); }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: var(--sans); font-size: 16px; line-height: 1.5; overflow-x: hidden; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+.wrap { width: min(1180px, calc(100% - 64px)); margin: 0 auto; }
+.skip-link { position: fixed; z-index: 20; left: 1rem; top: -4rem; padding: .75rem 1rem; color: var(--cream); background: var(--ink); border-radius: 2px; }
+.skip-link:focus { top: 1rem; }
+.progress { position: fixed; top: 0; z-index: 11; width: 100%; height: 3px; background: transparent; }
+.progress span { display: block; width: var(--progress, 0%); height: 100%; background: var(--orange); }
+.site-header { position: absolute; z-index: 10; top: 0; left: 0; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 28px 36px; color: var(--cream); }
+.wordmark { display: inline-flex; align-items: center; gap: 10px; font-size: .88rem; font-weight: 600; letter-spacing: -.02em; }
+.wordmark-mark { display: grid; width: 28px; height: 28px; place-items: center; color: var(--orange); background: var(--cream); border-radius: 50%; font-family: var(--serif); font-size: 1.1rem; font-style: italic; }
+.site-header nav { display: flex; align-items: center; gap: 26px; font-size: .85rem; font-weight: 500; }
+.site-header nav a:not(.header-link) { opacity: .8; transition: opacity .2s ease; }
+.site-header nav a:hover { opacity: 1; }
+.header-link { padding: 8px 13px; border: 1px solid rgba(244, 238, 231, .5); border-radius: 99px; }
+.hero, .scene { position: relative; min-height: 100vh; color: var(--cream); overflow: hidden; isolation: isolate; }
+.hero { display: grid; align-items: end; padding: 144px 0 88px; background: var(--orange); }
+.hero-art, .research-art, .contribute-art { position: absolute; inset: -8%; z-index: -3; background-position: center; background-size: cover; transform: translate3d(0, var(--scene-shift, 0px), 0) scale(var(--scene-scale, 1.04)); will-change: transform; }
+.hero-art { background-image: linear-gradient(90deg, rgba(91, 23, 4, .78) 0%, rgba(115, 35, 7, .55) 39%, rgba(115, 35, 7, .06) 70%), url("https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/assets/loka-human-agent-research.png"); background-position: 47% center; }
+.hero-sun { position: absolute; z-index: -2; top: 14%; right: 14%; width: 36vw; height: 36vw; max-width: 520px; max-height: 520px; border-radius: 50%; background: #eea700; opacity: .18; mix-blend-mode: screen; transform: translateY(calc(var(--scene-shift, 0px) * -.45)); }
+.hero-copy { max-width: 800px; }
+.eyebrow { margin: 0 0 22px; font-family: var(--mono); font-size: .72rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
+.eyebrow--dark { color: var(--orange-dark); }
+h1, h2 { margin: 0; font-family: var(--serif); font-weight: 600; letter-spacing: -.055em; line-height: .92; }
+h1 { font-size: clamp(3.9rem, 8.8vw, 8.7rem); }
+h2 { font-size: clamp(3.1rem, 6.6vw, 6.75rem); }
+h1 em, h2 em { color: #ffcf49; font-weight: 600; }
+.hero-intro { max-width: 570px; margin: 34px 0 32px; font-size: clamp(1.04rem, 1.8vw, 1.3rem); line-height: 1.55; }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; }
+.button { display: inline-flex; align-items: center; gap: 10px; padding: 13px 18px; border: 1px solid transparent; border-radius: 99px; font-size: .91rem; font-weight: 600; transition: transform .2s ease, background .2s ease, color .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.button--light { color: var(--ink); background: var(--cream); }
+.button--outline { color: var(--cream); border-color: rgba(244,238,231,.75); }
+.button--outline:hover { color: var(--ink); background: var(--cream); }
+.button--orange { color: var(--cream); background: var(--orange); }
+.text-link { display: inline-flex; gap: 8px; align-items: center; font-size: .92rem; font-weight: 600; }
+.text-link span, .button span { font-size: 1.1em; transition: transform .2s ease; }
+.text-link:hover span, .button:hover span { transform: translate(2px, -1px); }
+.scene-caption { position: absolute; right: 36px; bottom: 30px; margin: 0; font-family: var(--mono); font-size: .66rem; letter-spacing: .08em; opacity: .72; writing-mode: vertical-rl; }
+.statement { padding: clamp(96px, 13vw, 190px) 0; }
+.statement-grid { display: grid; grid-template-columns: 1.45fr .7fr; gap: clamp(44px, 10vw, 170px); align-items: start; }
+.statement h2 { font-size: clamp(2.9rem, 5.5vw, 6rem); }
+.statement h2 em { color: var(--orange); }
+.statement-body { padding-top: 7px; font-size: 1.03rem; line-height: 1.72; }
+.statement-body p:first-child { margin-top: 0; }
+.scene--research { min-height: 900px; display: grid; align-items: center; padding: 90px 0; background: #5e1707; }
+.research-art { background-image: url("https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/assets/loka-deep-research.png"); background-position: 60% center; }
+.scene-wash { position: absolute; z-index: -2; inset: 0; background: linear-gradient(90deg, rgba(76, 14, 3, .96) 0%, rgba(83, 19, 6, .83) 42%, rgba(83, 19, 6, .15) 78%); }
+.scene-content { width: min(1180px, calc(100% - 64px)); }
+.scene-content > p:not(.eyebrow) { max-width: 520px; margin: 31px 0; font-size: 1.05rem; line-height: 1.65; }
+.prompt-card { width: min(690px, 100%); margin: 36px 0 28px; border: 1px solid rgba(244, 238, 231, .3); background: rgba(21, 10, 4, .48); backdrop-filter: blur(10px); }
+.prompt-card__bar { display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; border-bottom: 1px solid rgba(244, 238, 231, .22); color: rgba(244,238,231,.78); font-family: var(--mono); font-size: .66rem; letter-spacing: .01em; }
+.copy-button { padding: 0; color: var(--cream); border: 0; background: none; cursor: pointer; font-family: var(--mono); font-size: .72rem; text-decoration: underline; text-underline-offset: 3px; }
+pre { overflow-x: auto; margin: 0; padding: 17px 16px; color: var(--cream); font-family: var(--mono); font-size: clamp(.68rem, 1.4vw, .8rem); line-height: 1.72; white-space: pre-wrap; }
+.routes { padding: clamp(92px, 12vw, 170px) 0; }
+.routes-heading { max-width: 710px; }
+.routes-heading h2 { color: var(--ink); }
+.routes-heading h2 em { color: var(--orange); }
+.routes-heading > p:last-child { max-width: 520px; margin: 30px 0 58px; font-size: 1.03rem; line-height: 1.65; }
+.route-list { margin-bottom: 35px; border-top: 1px solid var(--line); }
+.route { display: grid; grid-template-columns: 54px minmax(130px, .7fr) minmax(250px, 1.3fr) 24px; gap: 22px; align-items: center; padding: 23px 4px; border-bottom: 1px solid var(--line); transition: padding .25s ease, color .25s ease; }
+.route:hover { padding-right: 12px; padding-left: 12px; color: var(--orange-dark); }
+.route-number { color: var(--orange-dark); font-family: var(--mono); font-size: .71rem; }
+.route-name { font-family: var(--serif); font-size: 1.63rem; font-weight: 600; letter-spacing: -.04em; }
+.route-use { font-size: .92rem; line-height: 1.35; }
+.route-arrow { justify-self: end; font-size: 1.12rem; }
+.text-link--dark { color: var(--orange-dark); }
+.evaluation { padding: clamp(82px, 10vw, 140px) 0; background: #ded4ca; }
+.evaluation-grid { display: grid; grid-template-columns: 1fr .75fr; gap: clamp(48px, 13vw, 180px); }
+.evaluation h2 { color: var(--ink); }
+.evaluation h2 em { color: var(--red); }
+.evaluation-copy { padding-top: 12px; font-size: 1.03rem; line-height: 1.68; }
+.evaluation-copy p:first-child { margin-top: 0; }
+.evaluation-copy .button { margin-top: 15px; }
+.scene--contribute { min-height: 880px; display: grid; align-items: center; padding: 90px 0; background: var(--red); }
+.contribute-art { background-image: url("https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/assets/loka-contribute.png"); background-position: 62% center; }
+.scene-wash--contribute { background: linear-gradient(90deg, rgba(75, 9, 16, .95) 0%, rgba(97, 13, 20, .83) 39%, rgba(97, 13, 20, .12) 77%); }
+.scene-content--contribute > p:not(.eyebrow) { max-width: 530px; }
+.site-footer { display: grid; grid-template-columns: 1fr 1.2fr auto; gap: 30px; align-items: start; padding: 42px 0 48px; font-size: .84rem; }
+.wordmark--footer .wordmark-mark { color: var(--cream); background: var(--orange); }
+.site-footer p { margin: 0; color: rgba(32,27,26,.72); }
+.site-footer div { display: flex; gap: 20px; white-space: nowrap; }
+.site-footer div a { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 760px) {
+  .wrap, .scene-content { width: min(100% - 38px, 1180px); }
+  .site-header { padding: 20px; }
+  .site-header nav a:not(.header-link) { display: none; }
+  .wordmark { font-size: .78rem; }
+  .hero { min-height: 790px; padding: 130px 0 66px; }
+  .hero-art { background-position: 61% center; }
+  h1 { font-size: clamp(3.5rem, 17vw, 5.2rem); }
+  h2 { font-size: clamp(3rem, 14vw, 4.8rem); }
+  .hero-intro { margin-top: 27px; font-size: 1rem; }
+  .scene-caption { display: none; }
+  .statement-grid, .evaluation-grid { grid-template-columns: 1fr; gap: 32px; }
+  .statement { padding: 95px 0; }
+  .scene--research, .scene--contribute { min-height: 820px; }
+  .research-art { background-position: 66% center; }
+  .contribute-art { background-position: 64% center; }
+  .scene-wash { background: linear-gradient(0deg, rgba(76, 14, 3, .98) 0%, rgba(83, 19, 6, .84) 43%, rgba(83, 19, 6, .13) 89%); }
+  .scene-wash--contribute { background: linear-gradient(0deg, rgba(75, 9, 16, .97) 0%, rgba(97, 13, 20, .84) 44%, rgba(97, 13, 20, .13) 88%); }
+  .scene-content { align-self: end; padding-bottom: 30px; }
+  .scene-content > p:not(.eyebrow) { font-size: .96rem; }
+  .prompt-card { margin-top: 27px; }
+  .prompt-card__bar { align-items: flex-start; font-size: .58rem; }
+  .route { grid-template-columns: 36px 1fr 18px; gap: 12px; padding: 19px 0; }
+  .route-use { grid-column: 2 / 4; font-size: .84rem; }
+  .route-name { font-size: 1.45rem; }
+  .route-arrow { grid-column: 3; grid-row: 1; }
+  .site-footer { grid-template-columns: 1fr; gap: 19px; padding: 36px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  .hero-art, .research-art, .contribute-art, .hero-sun { transform: none !important; }
+}

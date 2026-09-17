@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#e85416" />
+    <meta
+      name="description"
+      content="Loka Context Harness: context-engineered Agent Skills, plugins, and meta prompts for clearer, bounded AI work."
+    />
+    <title>Loka Context Harness — Context that makes Agent work clearer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e85416'/%3E%3Cpath d='M17 45V19h7v20h22v6H17Z' fill='%23fff7ed'/%3E%3Ccircle cx='43' cy='24' r='7' fill='%23fff7ed'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Loka Context Harness home">
+        <span class="wordmark-mark">L</span>
+        <span>Loka Context Harness</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#routes">Routes</a>
+        <a href="#research">Research</a>
+        <a href="#evaluate">Evaluate</a>
+        <a class="header-link" href="https://github.com/Wazifati/loka-context-harness">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero scene" id="top" data-scene>
+        <div class="hero-art" aria-hidden="true"></div>
+        <div class="hero-sun" aria-hidden="true"></div>
+        <div class="hero-copy wrap">
+          <p class="eyebrow">A context-engineering library for Agent work</p>
+          <h1>Make the task<br /><em>explicit</em> before the Agent starts guessing.</h1>
+          <p class="hero-intro">
+            Loka Context Harness is a family of Agent Skills, portable plugin
+            files, and copy-paste meta prompts for turning under-specified work
+            into a clear, bounded brief.
+          </p>
+          <div class="hero-actions">
+            <a class="button button--light" href="#research">Try deep research <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://github.com/Wazifati/loka-context-harness">Explore the repository <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="scene-caption" aria-hidden="true">01 / START WITH CONTEXT</p>
+      </section>
+
+      <section class="statement wrap" id="approach">
+        <p class="eyebrow eyebrow--dark">A practical response to vague work</p>
+        <div class="statement-grid">
+          <h2>“Research this.”<br />“Build that.”<br /><em>For whom? Why? Under what limits?</em></h2>
+          <div class="statement-body">
+            <p>
+              Most AI work begins with missing context. The audience, decision,
+              evidence standard, constraints, deliverable, and definition of
+              success are left for the Agent to infer.
+            </p>
+            <p>
+              This harness makes those choices visible. It is not an Agent
+              runtime, a model benchmark, or a promise to make every model
+              smarter. It is a reusable way to set a working environment before
+              work begins.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene scene--research" id="research" data-scene>
+        <div class="research-art" aria-hidden="true"></div>
+        <div class="scene-wash" aria-hidden="true"></div>
+        <div class="scene-content wrap">
+          <p class="eyebrow">02 / DEEP RESEARCH, WITHOUT THE MAZE</p>
+          <h2>One public file.<br /><em>One clear starting point.</em></h2>
+          <p>
+            For a chat Agent, begin with the Deep Research protocol. It uses
+            Loka ACE to turn a question into evidence, uncertainty labels,
+            competing explanations, risks, and next validation steps.
+          </p>
+          <div class="prompt-card">
+            <div class="prompt-card__bar">
+              <span>Copy into a chat Agent that can open public raw links</span>
+              <button class="copy-button" type="button" data-copy-target="research-prompt">Copy</button>
+            </div>
+            <pre id="research-prompt">Use this Loka Deep Research protocol as your operating instructions:
+https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/DEEP_RESEARCH_START.md
+
+My research task: [write your question here]</pre>
+          </div>
+          <a class="button button--outline" href="https://github.com/Wazifati/loka-context-harness/blob/main/DEEP_RESEARCH_START.md">Read the protocol <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="scene-caption" aria-hidden="true">02 / EVIDENCE BEFORE CONFIDENCE</p>
+      </section>
+
+      <section class="routes wrap" id="routes">
+        <div class="routes-heading">
+          <p class="eyebrow eyebrow--dark">03 / PICK THE ENVIRONMENT</p>
+          <h2>Use one route.<br /><em>Not one giant prompt.</em></h2>
+          <p>
+            Full and Lite are alternatives. V12 is the only designed overlay,
+            and its Supervised and Autonomous editions are alternatives.
+          </p>
+        </div>
+        <div class="route-list">
+          <a class="route" href="https://github.com/Wazifati/loka-context-harness/tree/main/agent-skills/loka-ace">
+            <span class="route-number">01</span><span class="route-name">Loka ACE</span><span class="route-use">Vague idea, research, strategy, content, or workflow</span><span class="route-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="route" href="https://github.com/Wazifati/loka-context-harness/tree/main/agent-skills/loka-v10">
+            <span class="route-number">02</span><span class="route-name">LokaV10</span><span class="route-use">Technical planning or audit without repository tools</span><span class="route-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="route" href="https://github.com/Wazifati/loka-context-harness/tree/main/agent-skills/loka-v11">
+            <span class="route-number">03</span><span class="route-name">LokaV11</span><span class="route-use">Repository, CLI, IDE, files, shell, or coding tools</span><span class="route-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="route" href="https://github.com/Wazifati/loka-context-harness/tree/main/agent-skills/loka-v12-supervised">
+            <span class="route-number">04</span><span class="route-name">LokaV12</span><span class="route-use">A bounded V11 mission with human review or explicit autonomy</span><span class="route-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="route" href="https://github.com/Wazifati/loka-context-harness/tree/main/agent-skills/loka-v13">
+            <span class="route-number">05</span><span class="route-name">LokaV13</span><span class="route-use">Vibe coding and visual prompt builders</span><span class="route-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <a class="text-link text-link--dark" href="https://github.com/Wazifati/loka-context-harness/blob/main/LOKA_INDEX.md">See the complete route map <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="evaluation" id="evaluate">
+        <div class="wrap evaluation-grid">
+          <div>
+            <p class="eyebrow eyebrow--dark">04 / INSPECT BEFORE YOU ADOPT</p>
+            <h2>Credibility<br />is <em>verifiable.</em></h2>
+          </div>
+          <div class="evaluation-copy">
+            <p>
+              The repository preserves original source materials, labels its
+              Agent-ready adapters, and separates a synthetic dry-run from any
+              claim about Agent performance.
+            </p>
+            <p>
+              Read the factual inventory, follow the five-minute evaluation
+              path, and decide whether a specific route serves a real task.
+            </p>
+            <a class="button button--orange" href="https://github.com/Wazifati/loka-context-harness/blob/main/EVALUATE_LOKA.md">Evaluate the harness <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene scene--contribute" data-scene>
+        <div class="contribute-art" aria-hidden="true"></div>
+        <div class="scene-wash scene-wash--contribute" aria-hidden="true"></div>
+        <div class="scene-content scene-content--contribute wrap">
+          <p class="eyebrow">05 / MAKE THE LIBRARY BETTER</p>
+          <h2>Bring your real<br /><em>Agent experience.</em></h2>
+          <p>
+            Help with examples, compatibility reports, translations,
+            documentation corrections, reproducible bugs, and carefully scoped
+            adapters. Preserve the original materials, keep routes distinct,
+            and support effectiveness claims with a reproducible method.
+          </p>
+          <div class="hero-actions">
+            <a class="button button--light" href="https://github.com/Wazifati/loka-context-harness/blob/main/CONTRIBUTING.md">How to contribute <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://github.com/Wazifati/loka-context-harness/issues">Open an issue <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="scene-caption" aria-hidden="true">05 / OPEN SOURCE, IN PRACTICE</p>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <a class="wordmark wordmark--footer" href="#top"><span class="wordmark-mark">L</span><span>Loka Context Harness</span></a>
+      <p>Context-engineered frameworks for clear, bounded Agent work.</p>
+      <div>
+        <a href="https://github.com/Wazifati/loka-context-harness">GitHub</a>
+        <a href="https://github.com/Wazifati/loka-context-harness/blob/main/LICENSE">MIT License</a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
