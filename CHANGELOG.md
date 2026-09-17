@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.4 — Chat-agent direct-link routing
+
+- Adds `CHAT_START_HERE.md`, an explicit raw-link route map for chat agents
+  that cannot browse GitHub directories.
+- Changes no-code prompts to fetch one selected Skill or Lite prompt directly.
+- Makes preserved reference PDFs optional for normal chat use.
+
 ## 0.1.3 — Evidence and reporting hardening
 
 - Removes performance-implying language from synthetic dry-run outputs and the legacy runner.

@@ -23,3 +23,9 @@ editions are alternatives. Host platform policies and the user's current
 instructions always take precedence over Loka.
 
 See `LOKA_INDEX.md` for the complete Full, Lite, and overlay mapping.
+
+## Chat-only Agents
+
+For chat services that can fetch individual raw files but cannot browse GitHub
+directories, use [`CHAT_START_HERE.md`](CHAT_START_HERE.md). It gives each
+route an explicit raw URL and makes preserved source PDFs optional.

@@ -21,21 +21,19 @@ Use Loka Context Harness for this task:
 
 [PASTE MY TASK HERE]
 
-Read these files in order:
-1. https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/LOKA_ROOT.md
-2. https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/agent-skills/loka-router/SKILL.md
-3. The one matching Skill under https://github.com/Wazifati/loka-context-harness/tree/main/agent-skills
+Read and follow this chat-agent guide:
+https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/CHAT_START_HERE.md
 
-If the selected Skill points to a reference source, retrieve that matching file
-from the same repository. Do not merge V10, V11, and V13. Tell me which Loka
-route you selected in one sentence, then do the task.
+Do not browse a GitHub directory or repository listing. The guide contains the
+exact direct raw URL for each route. Fetch only the matching Skill or Lite
+prompt; it is sufficient for normal use. State the route in one sentence, then
+do the task.
 ```
 
-If the Agent cannot open GitHub links, open [`LOKA_ROOT.md`](LOKA_ROOT.md) and
-[`loka-router/SKILL.md`](agent-skills/loka-router/SKILL.md) in a browser, copy
-both into the chat, then attach or paste the one selected Skill. Attach the
-matching source PDF when the selected Skill requests it. You never need to
-paste the whole repository.
+If the Agent cannot open raw links, open [`CHAT_START_HERE.md`](CHAT_START_HERE.md)
+in a browser, copy its contents into the chat, then paste only the selected
+Skill or Lite prompt. Preserved PDFs are optional source material, not a normal
+chat-use requirement. You never need to paste the whole repository.
 
 For a more guided version, see [`QUICKSTART.md`](QUICKSTART.md).
 
