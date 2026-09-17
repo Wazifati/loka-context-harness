@@ -1,0 +1,5 @@
+I am a bilingual English/Spanish independent creator based in Barcelona. I teach freelancers how to use AI responsibly to turn their expertise into useful LinkedIn posts, short videos, newsletters, and simple digital products without sounding generic.
+
+I currently have 1,800 LinkedIn followers, 320 email subscribers, a small YouTube channel, ten hours per week, and a €700 total budget for the next 90 days. I do not want paid ads, fake urgency, copied content, bought engagement, or claims that AI can replace a professional. My audience is independent designers, copywriters, and consultants in Spain, Portugal, and the wider EU who are good at their work but inconsistent at marketing it.
+
+My goal is to build a realistic path to €3,000 monthly revenue from a mix of a low-cost template product, a live cohort, and a premium implementation offer. Create the plan I should actually follow: positioning, the first niche to focus on, offer ladder, a 90-day plan, one repeatable content series across LinkedIn/email/YouTube, metrics, weekly review rhythm, and the first three experiments I should run. Make it specific, commercially honest, and useful tomorrow.

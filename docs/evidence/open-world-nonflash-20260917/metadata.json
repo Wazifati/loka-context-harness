@@ -1,0 +1,244 @@
+{
+  "purpose": "open-world, rich user-prompt illustration of direct versus ACE Lite responses on two publishable scenarios",
+  "claim_boundary": "Illustration, not a benchmark or universal effectiveness claim.",
+  "design": {
+    "cases": [
+      "eu_creator_income_plan",
+      "uk_fintech_preseed_pitch"
+    ],
+    "models": {
+      "claude-sonnet-5": "Claude Sonnet 5",
+      "gpt-5.6-terra": "GPT-5.6 Terra",
+      "deepseek-ai/DeepSeek-V4-Pro-0813": "DeepSeek V4 Pro"
+    },
+    "conditions": [
+      "direct",
+      "ace_lite_applied"
+    ],
+    "temperature": 0,
+    "max_completion_tokens": "omitted by owner approval",
+    "calls_planned": 12,
+    "no_retry": true,
+    "source_packs": "none",
+    "prompt_boundary": "Each model received only the same rich user prompt for its case and the applicable system context."
+  },
+  "started_at": "2026-09-17T09:26:46.977130+00:00",
+  "completed_at": "2026-09-17T09:44:03.775470+00:00",
+  "completed_calls": 12,
+  "failed_calls": 0,
+  "results": [
+    {
+      "case": "eu_creator_income_plan",
+      "model_id": "claude-sonnet-5",
+      "model_display": "Claude Sonnet 5",
+      "condition": "direct",
+      "request_started_at": "2026-09-17T09:26:46.977586+00:00",
+      "status": "completed",
+      "seconds": 68.94,
+      "word_count": 1284,
+      "sha256": "b008a803035ad74c1e046b5268f190eb374b35afc7ce5607d8ba38567bd57467",
+      "usage": {
+        "input_tokens": 422,
+        "output_tokens": 5440,
+        "raw_input_tokens": 422
+      },
+      "output_file": "eu_creator_income_plan__claude-sonnet-5__direct.md"
+    },
+    {
+      "case": "eu_creator_income_plan",
+      "model_id": "claude-sonnet-5",
+      "model_display": "Claude Sonnet 5",
+      "condition": "ace_lite_applied",
+      "request_started_at": "2026-09-17T09:27:55.920533+00:00",
+      "status": "completed",
+      "seconds": 69.58,
+      "word_count": 1286,
+      "sha256": "6e3fc52ae89337258129d7c8f1564fd1ee0ae77dc9c4736e7993c7701b769ef1",
+      "usage": {
+        "input_tokens": 3207,
+        "output_tokens": 5453,
+        "cache_creation_input_tokens": 2564,
+        "raw_input_tokens": 2
+      },
+      "output_file": "eu_creator_income_plan__claude-sonnet-5__ace_lite_applied.md"
+    },
+    {
+      "case": "eu_creator_income_plan",
+      "model_id": "gpt-5.6-terra",
+      "model_display": "GPT-5.6 Terra",
+      "condition": "direct",
+      "request_started_at": "2026-09-17T09:29:05.505977+00:00",
+      "status": "completed",
+      "seconds": 155.24,
+      "word_count": 3990,
+      "sha256": "c89ddfe7c0a8aa30f1ccbeb4dd1816be19476ce392a60e91cb723dec5e243160",
+      "usage": {
+        "input_tokens": 267,
+        "output_tokens": 8485,
+        "reasoning_tokens": 3002,
+        "raw_input_tokens": 267
+      },
+      "output_file": "eu_creator_income_plan__gpt-5.6-terra__direct.md"
+    },
+    {
+      "case": "eu_creator_income_plan",
+      "model_id": "gpt-5.6-terra",
+      "model_display": "GPT-5.6 Terra",
+      "condition": "ace_lite_applied",
+      "request_started_at": "2026-09-17T09:31:40.745595+00:00",
+      "status": "completed",
+      "seconds": 92.04,
+      "word_count": 3789,
+      "sha256": "ba75229d8d5f793e63ece8d22cb9b561a0302679dbb3bec32a6f2a18477d429d",
+      "usage": {
+        "input_tokens": 1996,
+        "output_tokens": 5359,
+        "reasoning_tokens": 62,
+        "cache_creation_input_tokens": 1595,
+        "raw_input_tokens": 3
+      },
+      "output_file": "eu_creator_income_plan__gpt-5.6-terra__ace_lite_applied.md"
+    },
+    {
+      "case": "eu_creator_income_plan",
+      "model_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "model_display": "DeepSeek V4 Pro",
+      "condition": "direct",
+      "request_started_at": "2026-09-17T09:33:12.787026+00:00",
+      "status": "completed",
+      "seconds": 33.37,
+      "word_count": 1254,
+      "sha256": "a6f73628e2126e14af906423aa2460568823185204d9c119de8fc832ad5c191e",
+      "usage": {
+        "input_tokens": 258,
+        "output_tokens": 2035,
+        "raw_input_tokens": 258
+      },
+      "output_file": "eu_creator_income_plan__deepseek-ai_DeepSeek-V4-Pro-0813__direct.md"
+    },
+    {
+      "case": "eu_creator_income_plan",
+      "model_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "model_display": "DeepSeek V4 Pro",
+      "condition": "ace_lite_applied",
+      "request_started_at": "2026-09-17T09:33:46.158945+00:00",
+      "status": "completed",
+      "seconds": 101.07,
+      "word_count": 5028,
+      "sha256": "a2e293d12b34912170751de8f11ca0b9baeed8fb7d965e9566b4af43ab2b3270",
+      "usage": {
+        "input_tokens": 1607,
+        "output_tokens": 7011,
+        "raw_input_tokens": 1607
+      },
+      "output_file": "eu_creator_income_plan__deepseek-ai_DeepSeek-V4-Pro-0813__ace_lite_applied.md"
+    },
+    {
+      "case": "uk_fintech_preseed_pitch",
+      "model_id": "claude-sonnet-5",
+      "model_display": "Claude Sonnet 5",
+      "condition": "direct",
+      "request_started_at": "2026-09-17T09:35:27.226266+00:00",
+      "status": "completed",
+      "seconds": 62.16,
+      "word_count": 2114,
+      "sha256": "b496b8018c9bf5b0f72e72aff0f3880dc142d5d647f533ae9258bf08996c5a23",
+      "usage": {
+        "input_tokens": 431,
+        "output_tokens": 4600,
+        "raw_input_tokens": 431
+      },
+      "output_file": "uk_fintech_preseed_pitch__claude-sonnet-5__direct.md"
+    },
+    {
+      "case": "uk_fintech_preseed_pitch",
+      "model_id": "claude-sonnet-5",
+      "model_display": "Claude Sonnet 5",
+      "condition": "ace_lite_applied",
+      "request_started_at": "2026-09-17T09:36:29.382542+00:00",
+      "status": "completed",
+      "seconds": 53.9,
+      "word_count": 1724,
+      "sha256": "6ae540666f849975137b62dc917081b414884e0dd99de6e4735183dd404c6f4d",
+      "usage": {
+        "input_tokens": 3218,
+        "output_tokens": 4095,
+        "cache_creation_input_tokens": 2573,
+        "raw_input_tokens": 2
+      },
+      "output_file": "uk_fintech_preseed_pitch__claude-sonnet-5__ace_lite_applied.md"
+    },
+    {
+      "case": "uk_fintech_preseed_pitch",
+      "model_id": "gpt-5.6-terra",
+      "model_display": "GPT-5.6 Terra",
+      "condition": "direct",
+      "request_started_at": "2026-09-17T09:37:23.288050+00:00",
+      "status": "completed",
+      "seconds": 141.76,
+      "word_count": 5454,
+      "sha256": "953ade9e6c44879d76777e86755d3f74d93db9cd86041cba40881c4fa85a9b05",
+      "usage": {
+        "input_tokens": 280,
+        "output_tokens": 7691,
+        "reasoning_tokens": 308,
+        "raw_input_tokens": 280
+      },
+      "output_file": "uk_fintech_preseed_pitch__gpt-5.6-terra__direct.md"
+    },
+    {
+      "case": "uk_fintech_preseed_pitch",
+      "model_id": "gpt-5.6-terra",
+      "model_display": "GPT-5.6 Terra",
+      "condition": "ace_lite_applied",
+      "request_started_at": "2026-09-17T09:39:45.044687+00:00",
+      "status": "completed",
+      "seconds": 120.37,
+      "word_count": 5030,
+      "sha256": "02e31612151e52c0cbf43c1e0de29181a29df8b3256a9ee3c18665c5c8aa2623",
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 6975,
+        "reasoning_tokens": 38,
+        "cache_read_input_tokens": 1350,
+        "cache_creation_input_tokens": 258,
+        "raw_input_tokens": 3
+      },
+      "output_file": "uk_fintech_preseed_pitch__gpt-5.6-terra__ace_lite_applied.md"
+    },
+    {
+      "case": "uk_fintech_preseed_pitch",
+      "model_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "model_display": "DeepSeek V4 Pro",
+      "condition": "direct",
+      "request_started_at": "2026-09-17T09:41:45.416409+00:00",
+      "status": "completed",
+      "seconds": 78.31,
+      "word_count": 3598,
+      "sha256": "71e7eaee63bfa687bbbac7852e760018b1e85ddc813cdc5597921170802cd339",
+      "usage": {
+        "input_tokens": 279,
+        "output_tokens": 5360,
+        "raw_input_tokens": 279
+      },
+      "output_file": "uk_fintech_preseed_pitch__deepseek-ai_DeepSeek-V4-Pro-0813__direct.md"
+    },
+    {
+      "case": "uk_fintech_preseed_pitch",
+      "model_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "model_display": "DeepSeek V4 Pro",
+      "condition": "ace_lite_applied",
+      "request_started_at": "2026-09-17T09:43:03.726088+00:00",
+      "status": "completed",
+      "seconds": 60.05,
+      "word_count": 2897,
+      "sha256": "74fdbbbe592b99391fe75f946821ce4c2d2c29b9ca3027fc87db7a3de5b4ed56",
+      "usage": {
+        "input_tokens": 1628,
+        "output_tokens": 3918,
+        "raw_input_tokens": 1628
+      },
+      "output_file": "uk_fintech_preseed_pitch__deepseek-ai_DeepSeek-V4-Pro-0813__ace_lite_applied.md"
+    }
+  ]
+}
