@@ -30,6 +30,8 @@ what to clarify, how to distinguish evidence from assumptions, and how to
 return a decision-ready report. It cannot give a chat service browsing or file
 access it does not already have.
 
+![Loka and her Agent collaborator comparing research evidence](assets/loka-deep-research.png)
+
 - **Gemini:** on Gemini web, choose **Add file → More uploads → Import code**,
   paste this repository URL, then start a chat. A pasted GitHub URL alone is
   not a reliable import. See [Gemini use](docs/USE_WITH_GEMINI.md).
@@ -104,6 +106,8 @@ Gemini, local models, or another Agent platform.
 Want to inspect Loka rather than trust marketing? Start with
 [`EVALUATE_LOKA.md`](EVALUATE_LOKA.md). It provides a factual inventory, a
 five-minute evaluation path, and a grounded-review prompt for AI reviewers.
+
+![Loka and her Agent collaborator evaluating a project before adoption](assets/loka-factual-evaluation.png)
 
 The included synthetic dry-run verifies an evaluation workflow only. It is not
 model-performance evidence. Read [`METHODOLOGY.md`](METHODOLOGY.md) for the
