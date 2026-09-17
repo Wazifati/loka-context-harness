@@ -2,6 +2,10 @@
 
 > [Visit our landing page →](https://wazifati.github.io/loka-context-harness/)
 
+> [Watch the 45-second matched context demo →](https://wazifati.github.io/loka-context-harness/#demo)
+>
+> The demo shows the same Agent, task, and response limit with only a request, then with ACE Lite. It is an illustration to inspect—not a universal performance claim.
+
 ![A human researcher and an Agent working together](assets/loka-human-agent-research.png)
 
 > **Clear context for AI work that matters.**

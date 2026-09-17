@@ -57,6 +57,16 @@ h1 em, h2 em { color: #ffcf49; font-weight: 600; }
 .statement h2 em { color: var(--orange); }
 .statement-body { padding-top: 7px; font-size: 1.03rem; line-height: 1.72; }
 .statement-body p:first-child { margin-top: 0; }
+.demo { display: grid; grid-template-columns: minmax(280px, .78fr) minmax(420px, 1.22fr); gap: clamp(44px, 8vw, 108px); align-items: center; padding: clamp(90px, 12vw, 164px) 0; }
+.demo-copy h2 { color: var(--ink); font-size: clamp(3rem, 5.7vw, 6.1rem); }
+.demo-copy h2 em { color: var(--orange); }
+.demo-copy > p:not(.eyebrow) { max-width: 470px; margin: 29px 0 0; font-size: 1.03rem; line-height: 1.68; }
+.demo-copy .demo-note { margin-top: 18px; color: rgba(32,27,26,.68); font-size: .88rem; line-height: 1.58; }
+.demo-copy .text-link { margin-top: 29px; }
+.demo-player { position: relative; overflow: hidden; border: 1px solid rgba(32,27,26,.22); background: var(--ink); box-shadow: 20px 20px 0 var(--orange); }
+.demo-player::before { position: absolute; z-index: 1; top: 12px; left: 15px; content: "MATCHED CONTEXT DEMO / 00:45"; color: var(--cream); font-family: var(--mono); font-size: .61rem; letter-spacing: .08em; pointer-events: none; text-shadow: 0 1px 4px rgba(0,0,0,.8); }
+.demo-player video { display: block; width: 100%; aspect-ratio: 16 / 9; background: var(--ink); }
+
 .scene--research { min-height: 900px; display: grid; align-items: center; padding: 90px 0; background: #5e1707; }
 .research-art { background-image: url("https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/assets/loka-deep-research.png"); background-position: 60% center; }
 .scene-wash { position: absolute; z-index: -2; inset: 0; background: linear-gradient(90deg, rgba(76, 14, 3, .96) 0%, rgba(83, 19, 6, .83) 42%, rgba(83, 19, 6, .15) 78%); }
@@ -107,7 +117,7 @@ pre { overflow-x: auto; margin: 0; padding: 17px 16px; color: var(--cream); font
   h2 { font-size: clamp(3rem, 14vw, 4.8rem); }
   .hero-intro { margin-top: 27px; font-size: 1rem; }
   .scene-caption { display: none; }
-  .statement-grid, .evaluation-grid { grid-template-columns: 1fr; gap: 32px; }
+  .statement-grid, .evaluation-grid, .demo { grid-template-columns: 1fr; gap: 32px; }
   .statement { padding: 95px 0; }
   .scene--research, .scene--contribute { min-height: 820px; }
   .research-art { background-position: 66% center; }
@@ -116,6 +126,9 @@ pre { overflow-x: auto; margin: 0; padding: 17px 16px; color: var(--cream); font
   .scene-wash--contribute { background: linear-gradient(0deg, rgba(75, 9, 16, .97) 0%, rgba(97, 13, 20, .84) 44%, rgba(97, 13, 20, .13) 88%); }
   .scene-content { align-self: end; padding-bottom: 30px; }
   .scene-content > p:not(.eyebrow) { font-size: .96rem; }
+  .demo { padding: 82px 0 100px; }
+  .demo-player { box-shadow: 12px 12px 0 var(--orange); }
+  .demo-copy > p:not(.eyebrow) { font-size: .96rem; }
   .prompt-card { margin-top: 27px; }
   .prompt-card__bar { align-items: flex-start; font-size: .58rem; }
   .route { grid-template-columns: 36px 1fr 18px; gap: 12px; padding: 19px 0; }
