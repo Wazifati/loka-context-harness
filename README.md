@@ -122,6 +122,8 @@ carefully scoped new adapters. Preserve original source materials, keep routes
 distinct, credit external work, and do not make effectiveness claims without a
 reproducible methodology. Start with [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
+![Loka and her Agent collaborator making space for the next contributor](assets/loka-contribute.png)
+
 ## Sources and provenance
 
 The supplied original Full and Lite ACE, Failures, Index, usage guide, and
