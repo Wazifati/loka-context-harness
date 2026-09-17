@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.5 — Evaluator-first onboarding
+
+- Reframes the README around a clear first-use promise, direct Deep Research
+  path, route picker, boundaries, and evaluator journey.
+- Adds `DEEP_RESEARCH_START.md`, a single-file ACE Research Context for chat
+  Agents and Gemini attachment use.
+- Adds `EVALUATE_LOKA.md` and Gemini guidance to make factual review easier and
+  prevent invented runtime or benchmark claims.
+- Expands contribution guidance and adds a pull request review checklist.
+- Adds an original editorial human–Agent collaboration visual for the README.
+
 ## 0.1.4 — Chat-agent direct-link routing
 
 - Adds `CHAT_START_HERE.md`, an explicit raw-link route map for chat agents

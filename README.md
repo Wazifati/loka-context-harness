@@ -1,121 +1,131 @@
 # Loka Context Harness
 
-Loka is a family of context-engineered operating frameworks for improving the
-quality, safety, structure, and honesty of AI Agent work. Each version is for a
-specific environment. This repository preserves that structure and distributes
-it as Agent Skills, an Agent Plugin bundle, and Meta Prompts. See the
-[complete Loka Index](LOKA_INDEX.md) for Full, Lite, and overlay mapping.
+![A human researcher and an Agent working together](assets/loka-human-agent-research.png)
 
-## Start here — no code required
+> **Clear context for AI work that matters.**
+>
+> Loka is a library of context-engineered frameworks that helps an Agent turn an
+> under-specified task into clear, bounded, useful work. Use one matching route
+> as an Agent Skill, a portable Agent Plugin, or a copy-paste Meta Prompt.
 
-Use Loka selectively. A quick factual question or casual chat does not need it;
-choose a matching Lite edition when you want more structure without a long
-prompt, and use a Full edition only when the task genuinely needs its process.
+Loka is **not** an Agent runtime, a model benchmark, an orchestration engine,
+or a claim that a prompt makes any model smarter. It is a practical set of
+instructions for making objectives, process, constraints, deliverables, and
+quality criteria explicit.
 
-Loka is not an app or a service. For ordinary chat use, a person does **not**
-need to install anything. Paste the block below into an Agent, replace the task
-placeholder, and let the Agent read the public files.
+## Try it in 60 seconds: Deep Research
+
+You do not need code, an API key, a VPS, or a plugin install to try Loka.
+Paste this into a chat Agent that can open public raw links:
 
 ```text
-Use Loka Context Harness for this task:
+Use this Loka Deep Research protocol as your operating instructions:
+https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/DEEP_RESEARCH_START.md
 
-[PASTE MY TASK HERE]
-
-Read and follow this chat-agent guide:
-https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/CHAT_START_HERE.md
-
-Do not browse a GitHub directory or repository listing. The guide contains the
-exact direct raw URL for each route. Fetch only the matching Skill or Lite
-prompt; it is sufficient for normal use. State the route in one sentence, then
-do the task.
+My research task: [write your question here]
 ```
 
-If the Agent cannot open raw links, open [`CHAT_START_HERE.md`](CHAT_START_HERE.md)
-in a browser, copy its contents into the chat, then paste only the selected
-Skill or Lite prompt. Preserved PDFs are optional source material, not a normal
-chat-use requirement. You never need to paste the whole repository.
+The single-file protocol uses **Loka ACE Research Context**. It tells the Agent
+what to clarify, how to distinguish evidence from assumptions, and how to
+return a decision-ready report. It cannot give a chat service browsing or file
+access it does not already have.
 
-For a more guided version, see [`QUICKSTART.md`](QUICKSTART.md).
+- **Gemini:** on Gemini web, choose **Add file → More uploads → Import code**,
+  paste this repository URL, then start a chat. A pasted GitHub URL alone is
+  not a reliable import. See [Gemini use](docs/USE_WITH_GEMINI.md).
+- **A chat Agent that cannot open links:** download and attach just
+  [`DEEP_RESEARCH_START.md`](DEEP_RESEARCH_START.md), then state the task.
+- **An Agent host with Skills or Plugins:** start with the route map below.
 
-## Choose the correct Loka version
+## What Loka is and is not
 
-| Situation | Use |
+| Loka is | Loka is not |
 |---|---|
-| Vague intent, research, strategy, content, workflow, or assistant design | **Loka ACE** / **ACE Lite** for compact copy-paste use |
-| Prompt architecture, secure app/SaaS planning, or technical audit without repo/shell execution | **LokaV10** / **V10 Lite** |
-| Repo/CLI/IDE Agent that can inspect files, edit code, run commands, or use tools | **LokaV11** / **V11 Lite** |
-| Instruction trust, scope, architecture, dependency, or security gate | **Loka Guard** |
-| New implementation under V11: decide if code is needed and where it belongs | **Loka Build** on V11 |
-| Supervised 1–3 hour V11 coding session with periodic human review | **LokaV12 Supervised** / **V12 Lite** on V11 |
-| Bounded autonomous V11 mission with a delegated authority contract | **LokaV12 Autonomous Edition** / **Autonomous Edition Lite** on V11 |
-| Vibe coding, visual prompt builders, or agentic visual IDEs | **LokaV13** / **V13 Lite** |
+| A family of environment-specific context-engineering frameworks | A hosted app, model, runtime, or orchestration engine |
+| Agent Skills, a portable plugin bundle, and direct Meta Prompts | A promise that prompts improve every model or task |
+| A way to make a task's aim, process, constraints, output, and evaluation explicit | A single giant prompt to load everywhere |
+| Original Full and Lite materials preserved with new Agent-ready adapters | A replacement for host safety rules, tools, or human judgment |
 
-After a V13 project is exported to a normal repository/IDE, stop V13 and move
-to V11. Do not combine V10, V11, and V13. V12 is the sole intentional stack,
-and its Supervised and Autonomous editions are alternatives, not a combined
-prompt.
+## Choose one route
 
-## Full and Lite editions
+Start with the environment, not the most elaborate prompt. Load one Full or
+Lite route, then add an overlay only where the map explicitly permits it.
 
-Every primary Loka route has a Lite alternative: **ACE Lite, V10 Lite, V11
-Lite, V12 Lite (Supervised), V12 Autonomous Edition Lite, and V13 Lite**.
-Lite is the original compact, copy-paste edition for the **same environment** as
-its Full counterpart. Select one: Full for the complete framework, Lite for a
-short session or limited context. Never load Full and Lite together. V12 Lite is
-the original **supervised** V12 overlay. **V12 Autonomous Edition Lite** is a
-separate compact companion to the new autonomous edition. Guard, Build, and
-Failures are supporting modules, not alternate environment frameworks, so they
-do not have separate Lite forms. Direct-use Lite prompts are in
-[`meta-prompts/`](meta-prompts/).
+| Your situation | Choose | What it gives you |
+|---|---|---|
+| Vague idea, deep research, strategy, content, workflow, or assistant design | **Loka ACE** or **ACE Lite** | ACE-6 context: Aim, Character, Execution, Constraints, Export, Evaluation |
+| Planning, prompt architecture, secure app/SaaS planning, or technical audit without repository tools | **LokaV10** or **V10 Lite** | A planning and audit framework for non-repository work |
+| Repository, CLI, IDE, files, shell, or coding tools | **LokaV11** or **V11 Lite** | Evidence-aware, minimal-change repository work |
+| Risk, scope, instruction trust, architecture, dependency, or security boundary | **Loka Guard** | A supporting gate for tool-capable work |
+| Understood V11 implementation | **Loka Build** on V11 | Smallest sufficient, architecture-aware implementation |
+| Supervised 1–3 hour V11 coding session | **LokaV12 Supervised** on V11 | Periodic human-review checkpoints |
+| Explicitly bounded autonomous V11 mission | **LokaV12 Autonomous Edition** on V11 | Delegated authority, recoverability, and evidence handoffs |
+| Vibe coding or visual prompt builders | **LokaV13** or **V13 Lite** | A visual-builder route; move to V11 after export to a normal repo/IDE |
 
-## Use it as an Agent Skill, Agent Plugin, or Meta Prompt
+Do not combine V10, V11, and V13. Full and Lite are alternatives. V12 is the
+sole designed overlay, and its Supervised and Autonomous editions are
+alternatives, not a combined prompt. See the complete
+[route map](LOKA_INDEX.md).
 
-- **Agent Skills:** copy or install [`agent-skills/`](agent-skills/) into an
-  Agent host that supports the SKILL.md convention. Start with
-  [`LOKA_ROOT.md`](LOKA_ROOT.md) or the router, then load only the matching
-  module. The folder includes Full and Lite ACE, V10, V11, V12 Supervised,
-  V12 Autonomous, and V13 forms, plus Guard, Build, and Failures.
+## See the approach before you adopt it
+
+A vague request such as “research whether this product idea is worth pursuing”
+usually leaves the Agent guessing the audience, decision, evidence standard,
+constraints, output, and definition of success.
+
+Loka ACE makes those elements explicit. The result is a brief that asks for a
+specific decision, sources and uncertainty labels, competing explanations,
+risks, and next validation steps. Read the complete example in
+[Deep Research Start](DEEP_RESEARCH_START.md).
+
+This is a framework for better task definition, not proof of a particular model
+performance outcome. Evaluate it using an actual task and the transparent
+[evaluator guide](EVALUATE_LOKA.md).
+
+## Use it in your environment
+
+- **Agent Skills:** copy or install [`agent-skills/`](agent-skills/) into a host
+  that supports the `SKILL.md` convention. Start with [`LOKA_ROOT.md`](LOKA_ROOT.md)
+  or [`agent-skills/loka-router/SKILL.md`](agent-skills/loka-router/SKILL.md),
+  then load the single matching module.
 - **Agent Plugin:** [`agent-plugins/loka-context-harness/`](agent-plugins/loka-context-harness/)
-  is a self-contained portable bundle.
-- **Meta Prompts:** [`meta-prompts/`](meta-prompts/) provides direct-use
-  context for DIY harnesses. `agent-skills/` and `meta-prompts/` are the
-canonical sources; the portable Plugin mirrors them and is checked in CI to
-prevent version drift.
+  is a self-contained portable bundle. Its Skill and Meta Prompt mirrors are
+  checked in CI to prevent drift.
+- **Meta Prompts:** [`meta-prompts/`](meta-prompts/) contains direct-use prompts
+  for chat sessions and DIY harnesses.
+- **Chat-only Agents:** use [`CHAT_START_HERE.md`](CHAT_START_HERE.md), which
+  supplies direct raw URLs rather than asking the Agent to browse directories.
 
-The package is Agent-neutral and can be adapted to OpenClaw, Hermes, Claude,
-GPT, local models, or another Agent platform. No evaluation, VPS, API,
-subscription, or specific model is required to use it.
+Loka is Agent-neutral and can be adapted to OpenClaw, Hermes, Claude, GPT,
+Gemini, local models, or another Agent platform.
 
-## V12 editions
+## Evaluate before you install
 
-**V12 Supervised** is the preserved original: a V11 overlay for 1–3 hour
-sessions with a user available at checkpoints.
+Want to inspect Loka rather than trust marketing? Start with
+[`EVALUATE_LOKA.md`](EVALUATE_LOKA.md). It provides a factual inventory, a
+five-minute evaluation path, and a grounded-review prompt for AI reviewers.
 
-**V12 Autonomous Edition** is a separate second edition for capable Agents. It
-uses a bounded mission contract, explicit delegated authority, adaptive
-milestone checkpoints, recoverability, and concise evidence handoffs. It does
-not replace the original supervised framework or authorize excluded actions.
+The included synthetic dry-run verifies an evaluation workflow only. It is not
+model-performance evidence. Read [`METHODOLOGY.md`](METHODOLOGY.md) for the
+boundary and [`RUN_THIS_ON_VPS.md`](RUN_THIS_ON_VPS.md) only if you want to
+inspect that legacy runner.
 
-## Evidence and maturity
+## Contribute
 
-Loka is usable without an evaluation. The included dry-run materials verify an
-evaluation workflow on synthetic data; they are not performance evidence. This
-repository makes no claim that Loka turns smaller models into frontier models.
-Use measured results only for measured claims. Do not cite the included synthetic
-dry-run report as evidence of effectiveness.
-
-LokaV12 Autonomous Edition is a new, separately labelled edition. Use it for
-bounded missions only and treat it as evolving material; LokaV12 Supervised
-remains the preserved original.
+Useful contributions include improved examples, compatibility reports,
+translations, documentation corrections, reproducible distribution bugs, and
+carefully scoped new adapters. Preserve original source materials, keep routes
+distinct, credit external work, and do not make effectiveness claims without a
+reproducible methodology. Start with [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Sources and provenance
 
-The supplied original Full and Lite ACE, Failures, Index, usage guide, and V10–V13
-references are preserved under [`reference-source/`](reference-source/). New Agent Skills
-and V12 Autonomous Edition are clearly identified as distribution adapters or
-new material; they do not overwrite the originals.
+The supplied original Full and Lite ACE, Failures, Index, usage guide, and
+V10–V13 references are preserved under [`reference-source/`](reference-source/).
+New Agent Skills and the V12 Autonomous Edition are clearly labelled adapters
+or new material; they do not overwrite the originals.
 
-## Licence
+## License
 
-MIT. See [`LICENSE`](LICENSE). Please read [`ATTRIBUTION.md`](ATTRIBUTION.md)
-before contributing external material.
+MIT. See [`LICENSE`](LICENSE), [`ATTRIBUTION.md`](ATTRIBUTION.md),
+[`SECURITY.md`](SECURITY.md), and [`SUPPORT.md`](SUPPORT.md).
