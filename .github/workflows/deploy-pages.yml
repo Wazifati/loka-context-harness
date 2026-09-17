@@ -25,6 +25,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Verify and pin repository links to this release
+        run: python tools/check_site_links.py --pin-revision "$GITHUB_SHA"
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

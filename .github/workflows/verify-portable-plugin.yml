@@ -18,8 +18,10 @@ jobs:
         with:
           python-version: '3.11'
       - name: Compile local Python utilities
-        run: python -m py_compile runner/run_eval.py smoke_test/dry_run.py tools/sync_portable_plugin.py
+        run: python -m py_compile runner/run_eval.py smoke_test/dry_run.py smoke_test/test_plugin_mirror_checker.py tools/check_site_links.py tools/sync_portable_plugin.py
       - name: Verify plugin mirrors canonical sources
         run: python tools/sync_portable_plugin.py --check
+      - name: Verify mirror checker rejects stale plugin skills
+        run: python smoke_test/test_plugin_mirror_checker.py
       - name: Run deterministic synthetic pipeline check
         run: python smoke_test/dry_run.py

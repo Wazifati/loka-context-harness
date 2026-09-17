@@ -16,6 +16,18 @@ PLUGIN_PROMPTS = ROOT / "agent-plugins" / "loka-context-harness" / "meta-prompts
 PLUGIN_ONLY_PROMPTS = {"LOKA_SESSION_ADAPTIVE.md"}
 
 
+def skill_directory_mismatches(canonical_root: Path, plugin_root: Path) -> list[Path]:
+    """Return missing or extra top-level portable skill directories.
+
+    The portable plugin is a direct mirror at this level. Checking only
+    expected files would let an obsolete plugin skill survive indefinitely.
+    """
+
+    expected = {child.name for child in canonical_root.iterdir() if child.is_dir()}
+    actual = {child.name for child in plugin_root.iterdir() if child.is_dir()}
+    return [plugin_root / name / "SKILL.md" for name in sorted(expected ^ actual)]
+
+
 def file_pairs() -> list[tuple[Path, Path]]:
     skills = [
         (source, PLUGIN_SKILLS / source.parent.name / "SKILL.md")
@@ -45,6 +57,12 @@ def main() -> int:
     actual_prompt_names = {source.name for source in PLUGIN_PROMPTS.glob("*.md")}
     for name in sorted(expected_prompt_names ^ actual_prompt_names):
         mismatches.append((PLUGIN_PROMPTS / name).relative_to(ROOT))
+
+    mismatches.extend(
+        path.relative_to(ROOT)
+        for path in skill_directory_mismatches(CANONICAL_SKILLS, PLUGIN_SKILLS)
+    )
+    mismatches = sorted(set(mismatches))
 
     if mismatches and args.check:
         print("Portable plugin is out of sync:")
