@@ -6,6 +6,7 @@
   that cannot browse GitHub directories.
 - Changes no-code prompts to fetch one selected Skill or Lite prompt directly.
 - Makes preserved reference PDFs optional for normal chat use.
+- Replaces the over-compressed Loka ACE Agent Skill with the Full ACE-6 method, modes, templates, quality checks, and handoff protocol; ACE Lite remains the compact alternative.
 
 ## 0.1.3 — Evidence and reporting hardening
 
