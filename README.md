@@ -1,6 +1,6 @@
 # Loka Context Harness
 
-> [Visit the interactive landing page →](https://wazifati.github.io/loka-context-harness/)
+> [Visit our landing page →](https://wazifati.github.io/loka-context-harness/)
 
 ![A human researcher and an Agent working together](assets/loka-human-agent-research.png)
 
