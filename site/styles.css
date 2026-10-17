@@ -1,6 +1,80 @@
+/* DM Mono, DM Sans, Playfair Display (SIL Open Font License), latin subset, self-hosted.
+   The Google Fonts stylesheet chained CSS then fonts in front of the first paint. */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/dm-mono-0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/dm-mono-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/dm-sans-2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/dm-sans-2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/dm-sans-2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/dm-sans-2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/playfair-display-3.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/playfair-display-4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/playfair-display-4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 :root {
   --orange: #e85416;
-  --orange-dark: #b8390b;
+  --orange-dark: #9e3009; /* was #b8390b: 4:1 on the evaluation background, under 4.5:1 */
   --cream: #f4eee7;
   --ink: #201b1a;
   --red: #a62029;
@@ -30,7 +104,7 @@ button { font: inherit; }
 .hero, .scene { position: relative; min-height: 100vh; color: var(--cream); overflow: hidden; isolation: isolate; }
 .hero { display: grid; align-items: end; padding: 144px 0 88px; background: var(--orange); }
 .hero-art, .research-art, .contribute-art { position: absolute; inset: -8%; z-index: -3; background-position: center; background-size: cover; transform: translate3d(0, var(--scene-shift, 0px), 0) scale(var(--scene-scale, 1.04)); will-change: transform; }
-.hero-art { background-image: linear-gradient(90deg, rgba(91, 23, 4, .78) 0%, rgba(115, 35, 7, .55) 39%, rgba(115, 35, 7, .06) 70%), url("https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/assets/loka-human-agent-research.png"); background-position: 47% center; }
+.hero-art { background-image: linear-gradient(90deg, rgba(91, 23, 4, .78) 0%, rgba(115, 35, 7, .55) 39%, rgba(115, 35, 7, .06) 70%), url("media/loka-human-agent-research-1672.webp"); background-position: 47% center; }
 .hero-sun { position: absolute; z-index: -2; top: 14%; right: 14%; width: 36vw; height: 36vw; max-width: 520px; max-height: 520px; border-radius: 50%; background: #eea700; opacity: .18; mix-blend-mode: screen; transform: translateY(calc(var(--scene-shift, 0px) * -.45)); }
 .hero-copy { max-width: 800px; }
 .eyebrow { margin: 0 0 22px; font-family: var(--mono); font-size: .72rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
@@ -91,7 +165,7 @@ h1 em, h2 em { color: #ffcf49; font-weight: 600; }
 .comparison-method { max-width: 680px; margin: 22px 0; color: rgba(32,27,26,.68); font-size: .84rem; line-height: 1.55; }
 
 .scene--research { min-height: 900px; display: grid; align-items: center; padding: 90px 0; background: #5e1707; }
-.research-art { background-image: url("https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/assets/loka-deep-research.png"); background-position: 60% center; }
+.research-art { background-image: url("media/loka-deep-research-1672.webp"); background-position: 60% center; }
 .scene-wash { position: absolute; z-index: -2; inset: 0; background: linear-gradient(90deg, rgba(76, 14, 3, .96) 0%, rgba(83, 19, 6, .83) 42%, rgba(83, 19, 6, .15) 78%); }
 .scene-content { width: min(1180px, calc(100% - 64px)); }
 .scene-content > p:not(.eyebrow) { max-width: 520px; margin: 31px 0; font-size: 1.05rem; line-height: 1.65; }
@@ -120,7 +194,7 @@ pre { overflow-x: auto; margin: 0; padding: 17px 16px; color: var(--cream); font
 .evaluation-copy p:first-child { margin-top: 0; }
 .evaluation-copy .button { margin-top: 15px; }
 .scene--contribute { min-height: 880px; display: grid; align-items: center; padding: 90px 0; background: var(--red); }
-.contribute-art { background-image: url("https://raw.githubusercontent.com/Wazifati/loka-context-harness/main/assets/loka-contribute.png"); background-position: 62% center; }
+.contribute-art { background-image: url("media/loka-contribute-1672.webp"); background-position: 62% center; }
 .scene-wash--contribute { background: linear-gradient(90deg, rgba(75, 9, 16, .95) 0%, rgba(97, 13, 20, .83) 39%, rgba(97, 13, 20, .12) 77%); }
 .scene-content--contribute > p:not(.eyebrow) { max-width: 530px; }
 .site-footer { display: grid; grid-template-columns: 1fr 1.2fr auto; gap: 30px; align-items: start; padding: 42px 0 48px; font-size: .84rem; }
@@ -171,3 +245,14 @@ pre { overflow-x: auto; margin: 0; padding: 17px 16px; color: var(--cream); font
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
   .hero-art, .research-art, .contribute-art, .hero-sun { transform: none !important; }
 }
+
+/* Phones get half-width artwork (PageSpeed 2026-10-17: three 2 MB PNGs from raw.githubusercontent). */
+@media (max-width: 760px) {
+  .hero-art { background-image: linear-gradient(90deg, rgba(91, 23, 4, .78) 0%, rgba(115, 35, 7, .55) 39%, rgba(115, 35, 7, .06) 70%), url("media/loka-human-agent-research-960.webp"); }
+  .research-art { background-image: url("media/loka-deep-research-960.webp"); }
+  .contribute-art { background-image: url("media/loka-contribute-960.webp"); }
+}
+/* Contrast to 4.5:1 for small text. */
+.test-window header small { color: rgba(32,27,26,.78); }
+.test-window--ace header span { color: #f08a5d; }
+.button--orange { background: #b8390b; }

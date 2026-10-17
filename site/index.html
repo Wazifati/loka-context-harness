@@ -9,12 +9,9 @@
       content="Loka Context Harness: context-engineered Agent Skills, plugins, and meta prompts for clearer, bounded AI work."
     />
     <title>Loka Context Harness — Context that makes Agent work clearer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="fonts/playfair-display-4.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/playfair-display-3.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/dm-sans-2.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
@@ -27,7 +24,7 @@
     <div class="progress" aria-hidden="true"><span></span></div>
 
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Loka Context Harness home">
+      <a class="wordmark" href="#top">
         <span class="wordmark-mark">L</span>
         <span>Loka Context Harness</span>
       </a>
@@ -98,7 +95,7 @@
           <a class="text-link text-link--dark" href="https://github.com/Wazifati/loka-context-harness/blob/main/meta-prompts/LOKA_ACE_LITE.md" target="_blank" rel="noopener noreferrer">Read ACE Lite <span aria-hidden="true">↗</span></a>
         </div>
         <div class="demo-player">
-          <video controls playsinline preload="metadata" poster="media/loka-context-harness-ace-lite-demo-poster.jpg" aria-label="Loka ACE Lite matched context comparison">
+          <video controls playsinline preload="none" poster="media/loka-context-harness-ace-lite-demo-poster-960.webp" aria-label="Loka ACE Lite matched context comparison">
             <source src="media/loka-context-harness-ace-lite-demo.mp4" type="video/mp4" />
             Your browser cannot play this video. <a href="media/loka-context-harness-ace-lite-demo.mp4">Download the MP4 demo.</a>
           </video>
@@ -378,6 +375,6 @@ My research task: [write your question here]</pre>
         <a href="https://github.com/Wazifati/loka-context-harness/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a>
       </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
   </body>
 </html>
