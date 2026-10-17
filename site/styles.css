@@ -107,7 +107,7 @@ button { font: inherit; }
 .hero-art { background-image: linear-gradient(90deg, rgba(91, 23, 4, .78) 0%, rgba(115, 35, 7, .55) 39%, rgba(115, 35, 7, .06) 70%), url("media/loka-human-agent-research-1672.webp"); background-position: 47% center; }
 .hero-sun { position: absolute; z-index: -2; top: 14%; right: 14%; width: 36vw; height: 36vw; max-width: 520px; max-height: 520px; border-radius: 50%; background: #eea700; opacity: .18; mix-blend-mode: screen; transform: translateY(calc(var(--scene-shift, 0px) * -.45)); }
 .hero-copy { max-width: 800px; }
-.eyebrow { margin: 0 0 22px; font-family: var(--mono); font-size: .72rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
+.eyebrow { margin: 0 0 22px; font-family: var(--mono); font-size: .75rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
 .eyebrow--dark { color: var(--orange-dark); }
 h1, h2 { margin: 0; font-family: var(--serif); font-weight: 600; letter-spacing: -.055em; line-height: .92; }
 h1 { font-size: clamp(3.9rem, 8.8vw, 8.7rem); }
@@ -171,8 +171,8 @@ h1 em, h2 em { color: #ffcf49; font-weight: 600; }
 .scene-content > p:not(.eyebrow) { max-width: 520px; margin: 31px 0; font-size: 1.05rem; line-height: 1.65; }
 .prompt-card { width: min(690px, 100%); margin: 36px 0 28px; border: 1px solid rgba(244, 238, 231, .3); background: rgba(21, 10, 4, .48); backdrop-filter: blur(10px); }
 .prompt-card__bar { display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; border-bottom: 1px solid rgba(244, 238, 231, .22); color: rgba(244,238,231,.78); font-family: var(--mono); font-size: .66rem; letter-spacing: .01em; }
-.copy-button { padding: 0; color: var(--cream); border: 0; background: none; cursor: pointer; font-family: var(--mono); font-size: .72rem; text-decoration: underline; text-underline-offset: 3px; }
-pre { overflow-x: auto; margin: 0; padding: 17px 16px; color: var(--cream); font-family: var(--mono); font-size: clamp(.68rem, 1.4vw, .8rem); line-height: 1.72; white-space: pre-wrap; }
+.copy-button { padding: 0; color: var(--cream); border: 0; background: none; cursor: pointer; font-family: var(--mono); font-size: .75rem; text-decoration: underline; text-underline-offset: 3px; }
+pre { overflow-x: auto; margin: 0; padding: 17px 16px; color: var(--cream); font-family: var(--mono); font-size: clamp(.75rem, 1.4vw, .8rem); line-height: 1.72; white-space: pre-wrap; }
 .routes { padding: clamp(92px, 12vw, 170px) 0; }
 .routes-heading { max-width: 710px; }
 .routes-heading h2 { color: var(--ink); }
@@ -228,7 +228,7 @@ pre { overflow-x: auto; margin: 0; padding: 17px 16px; color: var(--cream); font
   .comparison-prompt { grid-template-columns: 1fr; gap: 10px; margin-top: 36px; padding: 18px 0; }
   .test-window header { grid-template-columns: 1fr auto; }
   .test-window header strong { grid-column: 1 / -1; grid-row: 2; }
-  .test-window pre { max-height: 360px; font-size: .7rem; }
+  .test-window pre { max-height: 360px; font-size: .75rem; }
   .demo-player { box-shadow: 12px 12px 0 var(--orange); }
   .demo-copy > p:not(.eyebrow) { font-size: .96rem; }
   .prompt-card { margin-top: 27px; }
