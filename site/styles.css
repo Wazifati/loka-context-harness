@@ -256,3 +256,5 @@ pre { overflow-x: auto; margin: 0; padding: 17px 16px; color: var(--cream); font
 .test-window header small { color: rgba(32,27,26,.78); }
 .test-window--ace header span { color: #f08a5d; }
 .button--orange { background: #b8390b; }
+
+.footer-note { font-size: .75rem; }
